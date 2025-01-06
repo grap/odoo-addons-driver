@@ -4,7 +4,7 @@
 
 {
     "name": "Point of Sale - LED Customer Display (odoo-driver)",
-    "version": "16.0.3.0.0",
+    "version": "16.0.4.0.0",
     "category": "Point Of Sale",
     "summary": "Communicate with LED Customer Display via odoo-driver library",
     "author": "GRAP",

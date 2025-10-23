@@ -1,3 +1,7 @@
+.. image:: https://odoo-community.org/readme-banner-image
+   :target: https://odoo-community.org/get-involved?utm_source=readme
+   :alt: Odoo Community Association
+
 ==========================================
 Point of Sale - Devices List (odoo-driver)
 ==========================================
@@ -13,7 +17,7 @@ Point of Sale - Devices List (odoo-driver)
 .. |badge1| image:: https://img.shields.io/badge/maturity-Beta-yellow.png
     :target: https://odoo-community.org/page/development-status
     :alt: Beta
-.. |badge2| image:: https://img.shields.io/badge/licence-AGPL--3-blue.png
+.. |badge2| image:: https://img.shields.io/badge/license-AGPL--3-blue.png
     :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
     :alt: License: AGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-grap%2Fodoo--addons--driver-lightgray.png?logo=github
@@ -35,15 +39,15 @@ It will store connected devices information in Odoo for analysis.
 Usage
 =====
 
-* Open the Point of sale, with usb devices connected.
-
-* Close the point of sale.
-
-* Go to " / Devices".
+- Open the Point of sale, with usb devices connected.
+- Close the point of sale.
+- Go to " / Devices".
 
 you can see the devices information, with last usage date.
 
-.. figure:: https://raw.githubusercontent.com/grap/odoo-addons-driver/16.0/pos_driver_device_list/static/img/pos_device_tree.png
+|image1|
+
+.. |image1| image:: https://raw.githubusercontent.com/grap/odoo-addons-driver/16.0/pos_driver_device_list/static/img/pos_device_tree.png
 
 Bug Tracker
 ===========
@@ -59,17 +63,17 @@ Credits
 =======
 
 Authors
-~~~~~~~
+-------
 
 * GRAP
 
 Contributors
-~~~~~~~~~~~~
+------------
 
-* Sylvain LE GAL (https://twitter.com/legalsylvain)
+- Sylvain LE GAL (https://twitter.com/legalsylvain)
 
 Maintainers
-~~~~~~~~~~~
+-----------
 
 This module is part of the `grap/odoo-addons-driver <https://github.com/grap/odoo-addons-driver/tree/16.0/pos_driver_device_list>`_ project on GitHub.
 

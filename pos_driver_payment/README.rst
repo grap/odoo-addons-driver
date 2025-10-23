@@ -1,3 +1,7 @@
+.. image:: https://odoo-community.org/readme-banner-image
+   :target: https://odoo-community.org/get-involved?utm_source=readme
+   :alt: Odoo Community Association
+
 =====================================================
 Point of Sale - Telium Payment Terminal (odoo-driver)
 =====================================================
@@ -13,7 +17,7 @@ Point of Sale - Telium Payment Terminal (odoo-driver)
 .. |badge1| image:: https://img.shields.io/badge/maturity-Beta-yellow.png
     :target: https://odoo-community.org/page/development-status
     :alt: Beta
-.. |badge2| image:: https://img.shields.io/badge/licence-AGPL--3-blue.png
+.. |badge2| image:: https://img.shields.io/badge/license-AGPL--3-blue.png
     :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
     :alt: License: AGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-grap%2Fodoo--addons--driver-lightgray.png?logo=github
@@ -22,8 +26,9 @@ Point of Sale - Telium Payment Terminal (odoo-driver)
 
 |badge1| |badge2| |badge3|
 
-This module extends the Point of Sale odoo module, to add compatibility with the ``odoo-driver``
-python library, when using Telium Payment Terminal.
+This module extends the Point of Sale odoo module, to add compatibility
+with the ``odoo-driver`` python library, when using Telium Payment
+Terminal.
 
 More information: https://pypi.org/project/odoo-driver/
 
@@ -35,22 +40,24 @@ More information: https://pypi.org/project/odoo-driver/
 Configuration
 =============
 
-* go to the "Point of Sale > Configuration > Payment Method"
+- go to the "Point of Sale > Configuration > Payment Method"
+- Check the option *Is Payment Terminal*
 
-* Check the option *Is Payment Terminal*
+|pos_payment_method_form|
 
-.. figure:: https://raw.githubusercontent.com/grap/odoo-addons-driver/16.0/pos_driver_payment/static/img/pos_payment_method_form.png
+.. |pos_payment_method_form| image:: https://raw.githubusercontent.com/grap/odoo-addons-driver/16.0/pos_driver_payment/static/img/pos_payment_method_form.png
 
 Usage
 =====
 
-* Open the Point of sale
+- Open the Point of sale
+- make an order, and select a payment that is marked as "Is Payment
+  Terminal"
+- Click on the button "Send to Payment Terminal"
 
-* make an order, and select a payment that is marked as "Is Payment Terminal"
+|pos_front_end|
 
-* Click on the button "Send to Payment Terminal"
-
-.. figure:: https://raw.githubusercontent.com/grap/odoo-addons-driver/16.0/pos_driver_payment/static/img/pos_front_end.png
+.. |pos_front_end| image:: https://raw.githubusercontent.com/grap/odoo-addons-driver/16.0/pos_driver_payment/static/img/pos_front_end.png
 
 Bug Tracker
 ===========
@@ -66,7 +73,7 @@ Credits
 =======
 
 Authors
-~~~~~~~
+-------
 
 * Aurélien DUMAINE
 * GRAP
@@ -74,17 +81,17 @@ Authors
 * ACSONE SA/NV
 
 Contributors
-~~~~~~~~~~~~
+------------
 
-This module is a full refactor of the OCA V16 module ``pos_terminal_payment``.
-Original authors and ideas are:
+This module is a full refactor of the OCA V16 module
+``pos_terminal_payment``. Original authors and ideas are:
 
-* Aurelien Dumaine
-* Alexis de Lattre <alexis.delattre@akretion.com>
-* Sylvain LE GAL (https://twitter.com/legalsylvain)
+- Aurelien Dumaine
+- Alexis de Lattre <alexis.delattre@akretion.com>
+- Sylvain LE GAL (https://twitter.com/legalsylvain)
 
 Maintainers
-~~~~~~~~~~~
+-----------
 
 This module is part of the `grap/odoo-addons-driver <https://github.com/grap/odoo-addons-driver/tree/16.0/pos_driver_payment>`_ project on GitHub.
 

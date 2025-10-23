@@ -14,7 +14,7 @@
         "ACSONE SA/NV,"
         "Odoo Community Association (OCA)"
     ),
-    "website": "https://github.com/grap/odoo-addons-pos",
+    "website": "https://github.com/grap/odoo-addons-driver",
     "license": "AGPL-3",
     "depends": ["point_of_sale"],
     "assets": {

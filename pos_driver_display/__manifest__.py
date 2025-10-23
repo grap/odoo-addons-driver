@@ -8,7 +8,7 @@
     "category": "Point Of Sale",
     "summary": "Communicate with LED Customer Display via odoo-driver library",
     "author": "GRAP",
-    "website": "https://github.com/grap/odoo-addons-pos",
+    "website": "https://github.com/grap/odoo-addons-driver",
     "license": "AGPL-3",
     "depends": ["point_of_sale"],
     "assets": {

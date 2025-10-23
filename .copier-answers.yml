@@ -18,9 +18,9 @@ org_name: GRAP
 org_slug: grap
 rebel_module_groups: []
 repo_description: ''
-repo_name: ' Odoo PoS Module developped specially for GRAP '
-repo_slug: odoo-addons-pos
-repo_website: https://github.com/grap/odoo-addons-pos
+repo_name: Odoo Drivers Module developped specially for GRAP
+repo_slug: odoo-addons-driver
+repo_website: https://github.com/grap/odoo-addons-driver
 use_pyproject_toml: false
 use_ruff: false
 

@@ -1,3 +1,7 @@
+.. image:: https://odoo-community.org/readme-banner-image
+   :target: https://odoo-community.org/get-involved?utm_source=readme
+   :alt: Odoo Community Association
+
 ==================================================
 Point of Sale - LED Customer Display (odoo-driver)
 ==================================================
@@ -13,7 +17,7 @@ Point of Sale - LED Customer Display (odoo-driver)
 .. |badge1| image:: https://img.shields.io/badge/maturity-Beta-yellow.png
     :target: https://odoo-community.org/page/development-status
     :alt: Beta
-.. |badge2| image:: https://img.shields.io/badge/licence-AGPL--3-blue.png
+.. |badge2| image:: https://img.shields.io/badge/license-AGPL--3-blue.png
     :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
     :alt: License: AGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-grap%2Fodoo--addons--driver-lightgray.png?logo=github
@@ -22,8 +26,9 @@ Point of Sale - LED Customer Display (odoo-driver)
 
 |badge1| |badge2| |badge3|
 
-This module extends the Point of Sale odoo module, to add compatibility with the ``odoo-driver``
-python library, when using LED Customer display.
+This module extends the Point of Sale odoo module, to add compatibility
+with the ``odoo-driver`` python library, when using LED Customer
+display.
 
 More information: https://pypi.org/project/odoo-driver/
 
@@ -35,51 +40,55 @@ More information: https://pypi.org/project/odoo-driver/
 Configuration
 =============
 
-To configure this module,
-* go to the menu Point of Sale > Configuration > Point of Sale
-* edit the point of sale for which you want to enable the LED:
+To configure this module, \* go to the menu Point of Sale >
+Configuration > Point of Sale \* edit the point of sale for which you
+want to enable the LED:
 
-* In the IotBox section, activate the option *LED Customer Display*,
-* configure the format of your LED screen. (2 lines of 20 characters, by default)
+- In the IotBox section, activate the option *LED Customer Display*,
+- configure the format of your LED screen. (2 lines of 20 characters, by
+  default)
+- optionaly, you can customize the *Next customer* message and the *POS
+  closed* message
 
-* optionaly, you can customize the *Next customer* message and the *POS closed* message
+|pos_config_form|
 
-.. figure:: https://raw.githubusercontent.com/grap/odoo-addons-driver/16.0/pos_driver_display/static/img/pos_config_form.png
+.. |pos_config_form| image:: https://raw.githubusercontent.com/grap/odoo-addons-driver/16.0/pos_driver_display/static/img/pos_config_form.png
 
 Usage
 =====
 
-Once everything is configured, just start the POS as usual.
-You will see the following messages on the device, depending
-on the events.
+Once everything is configured, just start the POS as usual. You will see
+the following messages on the device, depending on the events.
 
 'Welcome' message
-~~~~~~~~~~~~~~~~~
+-----------------
 
-* when cashier starts the PoS
-* when cashier creates a new empty PoS Order
+- when cashier starts the PoS
+- when cashier creates a new empty PoS Order
 
 'Close' message
-~~~~~~~~~~~~~~~
+---------------
 
-* when cashier Closes the PoS
+- when cashier Closes the PoS
 
 'Order Line' message
-~~~~~~~~~~~~~~~~~~~~
+--------------------
 
-* when cashier adds a product
-* when cashier changes the Unit Price, the discount or the quantity
+- when cashier adds a product
+- when cashier changes the Unit Price, the discount or the quantity
 
 'Product Removal' message
-~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------
 
-* when cashier removes an order line
+- when cashier removes an order line
 
 'Payment' message
-~~~~~~~~~~~~~~~~~
+-----------------
 
-* when the payment screen is displayed. (The device will display the total amount)
-* each time a payment is created, removed, or updated. (The device will display the amount of the change to give back)
+- when the payment screen is displayed. (The device will display the
+  total amount)
+- each time a payment is created, removed, or updated. (The device will
+  display the amount of the change to give back)
 
 Bug Tracker
 ===========
@@ -95,23 +104,23 @@ Credits
 =======
 
 Authors
-~~~~~~~
+-------
 
 * GRAP
 
 Contributors
-~~~~~~~~~~~~
+------------
 
-This module is a full refactor of the OCA V12 module ``pos_customer_display``.
-Original authors and ideas are:
+This module is a full refactor of the OCA V12 module
+``pos_customer_display``. Original authors and ideas are:
 
-* Aurélien Dumaine
-* Alexis de Lattre <alexis.delattre@akretion.com>
-* Father Odilon (`Barroux Abbey <http://www.barroux.org/>`_)
-* Daniel Kraft
+- Aurélien Dumaine
+- Alexis de Lattre <alexis.delattre@akretion.com>
+- Father Odilon (`Barroux Abbey <http://www.barroux.org/>`__)
+- Daniel Kraft
 
 Maintainers
-~~~~~~~~~~~
+-----------
 
 This module is part of the `grap/odoo-addons-driver <https://github.com/grap/odoo-addons-driver/tree/16.0/pos_driver_display>`_ project on GitHub.
 

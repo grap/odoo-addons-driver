@@ -1,13 +1,13 @@
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
 
+# Odoo Drivers Module developped specially for GRAP
 <!-- /!\ Non OCA Context : Set here the badge of your runbot / runboat instance. -->
-[![Pre-commit Status](https://github.com/grap/odoo-addons-pos/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/grap/odoo-addons-pos/actions/workflows/pre-commit.yml?query=branch%3A16.0)
-[![Build Status](https://github.com/grap/odoo-addons-pos/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/grap/odoo-addons-pos/actions/workflows/test.yml?query=branch%3A16.0)
-[![codecov](https://codecov.io/gh/grap/odoo-addons-pos/branch/16.0/graph/badge.svg)](https://codecov.io/gh/grap/odoo-addons-pos)
+[![Pre-commit Status](https://github.com/grap/odoo-addons-driver/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/grap/odoo-addons-driver/actions/workflows/pre-commit.yml?query=branch%3A16.0)
+[![Build Status](https://github.com/grap/odoo-addons-driver/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/grap/odoo-addons-driver/actions/workflows/test.yml?query=branch%3A16.0)
+[![codecov](https://codecov.io/gh/grap/odoo-addons-driver/branch/16.0/graph/badge.svg)](https://codecov.io/gh/grap/odoo-addons-driver)
 <!-- /!\ Non OCA Context : Set here the badge of your translation instance. -->
 
 <!-- /!\ do not modify above this line -->
-
-#  Odoo PoS Module developped specially for GRAP 
 
 
 
@@ -17,13 +17,7 @@
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[pos_driver_device_list](pos_driver_device_list/) | 16.0.3.0.0 |  | Get devices information from odoo-driver library
-[pos_driver_display](pos_driver_display/) | 16.0.4.0.0 |  | Communicate with LED Customer Display via odoo-driver library
-[pos_driver_payment](pos_driver_payment/) | 16.0.3.0.0 |  | Communicate with Telium Payment Terminal via odoo-driver library
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 

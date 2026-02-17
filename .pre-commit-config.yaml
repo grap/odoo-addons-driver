@@ -77,21 +77,6 @@ repos:
     rev: 22.8.0
     hooks:
       - id: black
-  - repo: local
-    hooks:
-      - id: eslint
-        name: eslint
-        entry: eslint
-        args:
-          - --color
-          - --fix
-        verbose: true
-        types: [javascript]
-        language: node
-        additional_dependencies:
-          - "eslint@8.24.0"
-          - "eslint-plugin-jsdoc@"
-          - "globals@"
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.3.0
     hooks:
@@ -128,7 +113,7 @@ repos:
           - --settings=.
         exclude: /__init__\.py$
   - repo: https://github.com/acsone/setuptools-odoo
-    rev: 3.1.8
+    rev: 3.3.2
     hooks:
       - id: setuptools-odoo-make-default
       - id: setuptools-odoo-get-requirements

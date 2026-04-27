@@ -5,9 +5,9 @@
 from odoo import fields, models
 
 
-class PosDevice(models.Model):
-    _name = "pos.device"
-    _description = "Point of Sale Devices"
+class PosPlugin(models.Model):
+    _name = "pos.plugin"
+    _description = "Point of Sale Plugins"
     _order = "last_connexion_date desc, name"
 
     device_type = fields.Selection(
@@ -19,18 +19,14 @@ class PosDevice(models.Model):
         ]
     )
 
+    name = fields.Char(readonly=True)
+
     config_id = fields.Many2one(comodel_name="pos.config")
 
     company_id = fields.Many2one(related="config_id.company_id")
 
-    name = fields.Char(readonly=True)
+    plugin_version = fields.Char(readonly=True)
 
-    product_name = fields.Char(readonly=True)
-
-    vendor_product_code = fields.Char(readonly=True)
-
-    serial_number = fields.Char(readonly=True)
-
-    manufacturer = fields.Char(readonly=True)
+    plugin_hash = fields.Char(readonly=True)
 
     last_connexion_date = fields.Datetime(readonly=True)

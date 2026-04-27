@@ -20,6 +20,7 @@
         "security/ir.model.access.csv",
         "security/ir_rule.xml",
         "views/view_pos_device.xml",
+        "views/view_pos_plugin.xml",
     ],
     "installable": True,
 }

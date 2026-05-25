@@ -14,8 +14,38 @@ class PosConfig(models.Model):
 
     @api.model
     def update_pos_device(self, config_id, changes):
+        last_connexion_date = datetime.now()
+
         PosDevice = self.env["pos.device"]
+        PosPlugin = self.env["pos.plugin"]
         for device_type, device_info in changes.items():
+            # Create Plugin if not exist
+            existing_plugin = PosPlugin.search(
+                [
+                    ("config_id", "=", config_id),
+                    ("device_type", "=", device_type),
+                    ("name", "=", device_info.get("plugin_name", False)),
+                    ("plugin_version", "=", device_info.get("plugin_version", False)),
+                    ("plugin_hash", "=", device_info.get("plugin_hash", False)),
+                ],
+                limit=1,
+                order="last_connexion_date desc",
+            )
+            if existing_plugin:
+                existing_plugin.write({"last_connexion_date": datetime.now()})
+            else:
+                PosPlugin.create(
+                    {
+                        "config_id": config_id,
+                        "device_type": device_type,
+                        "name": device_info.get("plugin_name", False),
+                        "plugin_version": device_info.get("plugin_version", False),
+                        "plugin_hash": device_info.get("plugin_hash", False),
+                        "last_connexion_date": last_connexion_date,
+                    }
+                )
+
+            # Create device if not exist
             existing_device = PosDevice.search(
                 [
                     ("config_id", "=", config_id),
@@ -47,7 +77,7 @@ class PosConfig(models.Model):
                         "vendor_product_code": device_info.get(
                             "vendor_product_code", False
                         ),
-                        "last_connexion_date": datetime.now(),
+                        "last_connexion_date": last_connexion_date,
                     }
                 )
         return True

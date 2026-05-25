@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<!--
+    Copyright (C) 2024 - Today: GRAP (http://www.grap.coop)
+    @author: Sylvain LE GAL (https://twitter.com/legalsylvain)
+    License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+-->
+<odoo>
+
+    <record id="view_pos_plugin_tree" model="ir.ui.view">
+        <field name="model">pos.plugin</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="last_connexion_date"/>
+                <field name="device_type"/>
+                <field name="name"/>
+                <field name="plugin_version"/>
+                <field name="plugin_hash"/>
+                <field name="config_id" optional="show"/>
+                <field name="company_id" optional="hide" groups="base.group_multi_company"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_pos_plugin" model="ir.actions.act_window">
+        <field name="name">PoS Plugins</field>
+        <field name="res_model">pos.plugin</field>
+        <field name="view_mode">tree</field>
+    </record>
+
+    <record  id="menu_pos_plugin" model="ir.ui.menu">
+        <field name="name">PoS Plugins</field>
+        <field name="sequence" eval="21" />
+        <field name="action" ref="action_pos_plugin" />
+        <field name="parent_id" ref="point_of_sale.menu_point_config_product" />
+    </record>
+
+</odoo>

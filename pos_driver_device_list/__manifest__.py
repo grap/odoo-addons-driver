@@ -4,7 +4,7 @@
 
 {
     "name": "Point of Sale - Devices List (odoo-driver)",
-    "version": "16.0.3.0.2",
+    "version": "16.0.3.1.0",
     "category": "Point Of Sale",
     "summary": "Get devices information from odoo-driver library",
     "author": "GRAP",

@@ -7,36 +7,43 @@ msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-14 13:15+0000\n"
-"PO-Revision-Date: 2024-09-14 13:15+0000\n"
+"PO-Revision-Date: 2026-08-07 16:08+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
-"Plural-Forms: \n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #. module: pos_driver_device_list
 #: model:ir.model.fields,field_description:pos_driver_device_list.field_pos_device__company_id
+#: model:ir.model.fields,field_description:pos_driver_device_list.field_pos_plugin__company_id
 msgid "Company"
 msgstr "Société"
 
 #. module: pos_driver_device_list
 #: model:ir.model.fields,field_description:pos_driver_device_list.field_pos_device__config_id
+#: model:ir.model.fields,field_description:pos_driver_device_list.field_pos_plugin__config_id
 msgid "Config"
-msgstr "Point de vente"
+msgstr "Configuration"
 
 #. module: pos_driver_device_list
 #: model:ir.model.fields,field_description:pos_driver_device_list.field_pos_device__create_uid
+#: model:ir.model.fields,field_description:pos_driver_device_list.field_pos_plugin__create_uid
 msgid "Created by"
 msgstr "Créé par"
 
 #. module: pos_driver_device_list
 #: model:ir.model.fields,field_description:pos_driver_device_list.field_pos_device__create_date
+#: model:ir.model.fields,field_description:pos_driver_device_list.field_pos_plugin__create_date
 msgid "Created on"
 msgstr "Créé le"
 
 #. module: pos_driver_device_list
 #: model:ir.model.fields.selection,name:pos_driver_device_list.selection__pos_device__device_type__display
+#: model:ir.model.fields.selection,name:pos_driver_device_list.selection__pos_plugin__device_type__display
 msgid "Customer Display"
 msgstr "Afficheur client"
 
@@ -47,58 +54,83 @@ msgstr "Périphérique"
 
 #. module: pos_driver_device_list
 #: model:ir.model.fields,field_description:pos_driver_device_list.field_pos_device__device_type
+#: model:ir.model.fields,field_description:pos_driver_device_list.field_pos_plugin__device_type
 msgid "Device Type"
 msgstr "Type de périphérique"
 
 #. module: pos_driver_device_list
 #: model:ir.model.fields,field_description:pos_driver_device_list.field_pos_device__display_name
+#: model:ir.model.fields,field_description:pos_driver_device_list.field_pos_plugin__display_name
 msgid "Display Name"
 msgstr "Nom complet"
 
 #. module: pos_driver_device_list
 #: model:ir.model.fields,field_description:pos_driver_device_list.field_pos_device__id
+#: model:ir.model.fields,field_description:pos_driver_device_list.field_pos_plugin__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: pos_driver_device_list
 #: model:ir.model.fields,field_description:pos_driver_device_list.field_pos_device__last_connexion_date
+#: model:ir.model.fields,field_description:pos_driver_device_list.field_pos_plugin__last_connexion_date
 msgid "Last Connexion Date"
 msgstr "Date de dernière connexion"
 
 #. module: pos_driver_device_list
 #: model:ir.model.fields,field_description:pos_driver_device_list.field_pos_device____last_update
+#: model:ir.model.fields,field_description:pos_driver_device_list.field_pos_plugin____last_update
 msgid "Last Modified on"
 msgstr "Dernière mise à jour le"
 
 #. module: pos_driver_device_list
 #: model:ir.model.fields,field_description:pos_driver_device_list.field_pos_device__write_uid
+#: model:ir.model.fields,field_description:pos_driver_device_list.field_pos_plugin__write_uid
 msgid "Last Updated by"
 msgstr "Dernière mise à jour par"
 
 #. module: pos_driver_device_list
 #: model:ir.model.fields,field_description:pos_driver_device_list.field_pos_device__write_date
+#: model:ir.model.fields,field_description:pos_driver_device_list.field_pos_plugin__write_date
 msgid "Last Updated on"
 msgstr "Dernière mise à jour le"
 
 #. module: pos_driver_device_list
 #: model:ir.model.fields,field_description:pos_driver_device_list.field_pos_device__manufacturer
 msgid "Manufacturer"
-msgstr ""
+msgstr "Fabricant"
 
 #. module: pos_driver_device_list
 #: model:ir.model.fields,field_description:pos_driver_device_list.field_pos_device__name
+#: model:ir.model.fields,field_description:pos_driver_device_list.field_pos_plugin__name
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 #. module: pos_driver_device_list
 #: model:ir.model.fields.selection,name:pos_driver_device_list.selection__pos_device__device_type__payment
+#: model:ir.model.fields.selection,name:pos_driver_device_list.selection__pos_plugin__device_type__payment
 msgid "Payment Terminal"
-msgstr ""
+msgstr "Terminal de paiement"
+
+#. module: pos_driver_device_list
+#: model:ir.model.fields,field_description:pos_driver_device_list.field_pos_plugin__plugin_hash
+msgid "Plugin Hash"
+msgstr "Hash du plugin"
+
+#. module: pos_driver_device_list
+#: model:ir.model.fields,field_description:pos_driver_device_list.field_pos_plugin__plugin_version
+msgid "Plugin Version"
+msgstr "Version du plugin"
 
 #. module: pos_driver_device_list
 #: model:ir.ui.menu,name:pos_driver_device_list.menu_pos_device
 msgid "PoS Devices"
-msgstr ""
+msgstr "Périphériques PdV"
+
+#. module: pos_driver_device_list
+#: model:ir.actions.act_window,name:pos_driver_device_list.action_pos_plugin
+#: model:ir.ui.menu,name:pos_driver_device_list.menu_pos_plugin
+msgid "PoS Plugins"
+msgstr "Plugins PdV"
 
 #. module: pos_driver_device_list
 #: model:ir.model,name:pos_driver_device_list.model_pos_config
@@ -108,34 +140,41 @@ msgstr "Configuration du point de vente"
 #. module: pos_driver_device_list
 #: model:ir.model,name:pos_driver_device_list.model_pos_device
 msgid "Point of Sale Devices"
-msgstr ""
+msgstr "Périphériques du point de vente"
+
+#. module: pos_driver_device_list
+#: model:ir.model,name:pos_driver_device_list.model_pos_plugin
+msgid "Point of Sale Plugins"
+msgstr "Plugins du point de vente"
 
 #. module: pos_driver_device_list
 #: model:ir.actions.act_window,name:pos_driver_device_list.action_pos_device
 msgid "Pos Devices"
-msgstr ""
+msgstr "Périphériques PdV"
 
 #. module: pos_driver_device_list
 #: model:ir.model.fields.selection,name:pos_driver_device_list.selection__pos_device__device_type__printer
+#: model:ir.model.fields.selection,name:pos_driver_device_list.selection__pos_plugin__device_type__printer
 msgid "Printer"
-msgstr ""
+msgstr "Imprimante"
 
 #. module: pos_driver_device_list
 #: model:ir.model.fields,field_description:pos_driver_device_list.field_pos_device__product_name
 msgid "Product Name"
-msgstr ""
+msgstr "Nom du produit"
 
 #. module: pos_driver_device_list
 #: model:ir.model.fields.selection,name:pos_driver_device_list.selection__pos_device__device_type__scale
+#: model:ir.model.fields.selection,name:pos_driver_device_list.selection__pos_plugin__device_type__scale
 msgid "Scale"
-msgstr ""
+msgstr "Balance"
 
 #. module: pos_driver_device_list
 #: model:ir.model.fields,field_description:pos_driver_device_list.field_pos_device__serial_number
 msgid "Serial Number"
-msgstr ""
+msgstr "Numéro de série"
 
 #. module: pos_driver_device_list
 #: model:ir.model.fields,field_description:pos_driver_device_list.field_pos_device__vendor_product_code
 msgid "Vendor Product Code"
-msgstr ""
+msgstr "Code du vendeur & produit"

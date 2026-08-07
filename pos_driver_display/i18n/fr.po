@@ -10,6 +10,7 @@ msgstr ""
 "PO-Revision-Date: 2024-12-19 16:14+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -60,17 +61,15 @@ msgid ""
 "Message on the customer display which is displayed after starting POS and "
 "also after validation of an order"
 msgstr ""
-"Message de l'afficheur client qui est affiché après le "
-"démarrage de la caisse et également après validation d'une commande client"
-
+"Message de l'afficheur client qui est affiché après le démarrage de la "
+"caisse et également après validation d'une commande client"
 
 #. module: pos_driver_display
 #: model:ir.model.fields,help:pos_driver_display.field_pos_config__customer_display_message_closed
 #: model:ir.model.fields,help:pos_driver_display.field_res_config_settings__pos_customer_display_message_closed
 msgid "Message on the customer display which is displayed when POS is closed"
 msgstr ""
-"Message de l'afficheur client qui est affiché quand la "
-"caisse est fermée"
+"Message de l'afficheur client qui est affiché quand la caisse est fermée"
 
 #. module: pos_driver_display
 #: model:ir.model.fields,field_description:pos_driver_display.field_pos_config__customer_display_message_next
